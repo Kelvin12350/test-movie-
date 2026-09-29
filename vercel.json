@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
+      "source": "/cb-api/:path*",
+      "destination": "https://movie-terms.vercel.app/api/:path*"
+    },
+    {
       "source": "/proxy-api/:path*",
-      "destination": "https://movie-terms.vercel.app/:path*"
+      "destination": "https://movie-terms.vercel.app/proxy-api/:path*"
     }
   ]
 }
